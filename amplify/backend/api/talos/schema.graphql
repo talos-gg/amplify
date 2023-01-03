@@ -1,0 +1,21 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+} # FOR TESTING ONLY!
+
+
+# TODO: Remove GQL queries, subscriptions, mutations
+type EventFilterTrigger @model {
+  # Non-null, "0x" is used to denote wildcard match 
+  address: String! @primaryKey(sortKeyFields: ["id"])
+
+  # internal UUID
+  id: String!
+
+  # not abi encoded, see https://docs.ethers.org/v5/concepts/events/#events--filters for format
+  filterTopics: AWSJSON
+
+  # if null, filterTopics is ignored and all address events will satisfy
+  eventAbi: String
+}

@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-talos-dev-121049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::628309546451:role/amplify-talos-dev-121049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::628309546451:role/amplify-talos-dev-121049-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-talos-dev-121049-deployment",
+      "UnauthRoleName": "amplify-talos-dev-121049-unauthRole",
+      "StackName": "amplify-talos-dev-121049",
+      "StackId": "arn:aws:cloudformation:us-east-1:628309546451:stack/amplify-talos-dev-121049/3e1c4180-89f7-11ed-ac0f-0a8057042631",
+      "AmplifyAppId": "d650z5abk31wn"
+    },
+    "categories": {
+      "auth": {
+        "talos64d4630f64d4630f": {}
+      },
+      "api": {
+        "talos": {}
+      }
+    }
+  }
+}
